@@ -7,8 +7,8 @@ class StudentRole :
 {
 public:
 	StudentRole();
+	StudentRole(int IDNumber, int studyYear, int studyGroup, std::string financialForm);
 	~StudentRole();
-	//TO DO: getMark, setMark, removeMark si constructorii;
 	void set_ID(int);
 	int get_ID();
 	void set_StudyYear(int);
@@ -17,6 +17,14 @@ public:
 	int get_StudyGroup();
 	void set_FinancialForm(std::string);
 	std::string get_FinancialForm();
+	long getMarksSize();
+	float getMarkByDiscipline(std::string name);
+	void addMark(Mark* mark);
+	void addMark(float mark, Discipline* discipline);
+	void removeMark(std::string discipline);
+	void updateMark(float mark, std::string discipline);
+	Mark* getMark(int iterator);
+	bool isMarkSet(Discipline* discipline);
 private:
 	int mID;
 	int mStudyYear;

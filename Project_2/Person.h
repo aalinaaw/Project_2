@@ -24,13 +24,12 @@ public:
 	friend std::istream & operator>>(std::istream & stream, Person &);
 	friend std::ostream & operator<<(std::ostream & stream, Person &);
 
-	void AddRole(Role* role)
-	{
-		mRoles.push_back(role);
-	}
+	void AddRole(Role* role);
+	void removeRole(int role);
 	Role* displayRole(int);
 	Role::RoleType getRole(int);
-
+	bool isStudent();
+	bool isTeacher();
 protected:
 	std::string mFirstName;
 	std::string mLastName;

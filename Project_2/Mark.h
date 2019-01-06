@@ -4,12 +4,12 @@
 class Mark
 {
 public:
-	Mark();
-	//setters and getters pentru mMark and mDiscipline
-	void set_Mark(float);
-	float get_Mark();
-	void set_Discipline(Discipline*);
-	std::string get_Discipline();
+	Mark(float mark, Discipline* discipline);
+	std::string getDiscipline();
+	float getMark();
+	void setDiscipline(Discipline* discipline);
+	void setMark(float mark);
+	void setMark(float mark);
 private:
 	float mMark;
 	Discipline* mDiscipline;

@@ -1,27 +1,23 @@
 #include "pch.h"
 #include "Mark.h"
 
-
-Mark::Mark()
-{
+Mark::Mark(float mark, Discipline* discipline) {
+	this->mMark = mark;
+	this->mDiscipline = discipline;
 }
 
-void Mark::set_Mark(float Mark)
-{
-	mMark = Mark;
+std::string Mark::getDiscipline() {
+	return this->mDiscipline->getName();
 }
 
-float Mark::get_Mark()
-{
-	return mMark;
+float Mark::getMark() {
+	return this->mMark;
 }
 
-void Mark::set_Discipline(Discipline* Discipline)
-{
-	mDiscipline = Discipline;
+void Mark::setDiscipline(Discipline * discipline) {
+	this->mDiscipline = discipline;
 }
 
-std::string Mark::get_Discipline()
-{
-	return mDiscipline -> get_Name();
+void Mark::setMark(float mark) {
+	this->mMark = mark;
 }

@@ -159,6 +159,7 @@
     <ClInclude Include="Mark.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="Repository.h" />
     <ClInclude Include="Role.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="StudentRole.h" />
@@ -179,6 +180,7 @@
     </ClCompile>
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Project_2.cpp" />
+    <ClCompile Include="Repository.cpp" />
     <ClCompile Include="Role.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="StudentRole.cpp" />
